@@ -1,0 +1,11 @@
+name: CI pipeline
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: run a basic test
+      run: echo "CI pipeline running!
+  
