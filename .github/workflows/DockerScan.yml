@@ -17,6 +17,7 @@ jobs:
           sudo mv trivy /usr/local/bin/
 
       - name: build image from dockerfile
-        run: docker build -t dev-app-image:${{ github.sha }}
+        run: docker build -t dev-app-image:${{ github.sha }} .
+
       - name: scan docker image
         run: trivy image dev-app-image:${{ github.sha }}
