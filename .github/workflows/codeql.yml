@@ -1,4 +1,4 @@
-name: "CodeQl analysis"
+name: CodeQl analysis
 on: [push, pull_request]
 jobs:
   analyze:
