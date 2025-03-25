@@ -6,6 +6,10 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
+
+    - name: Download Pytest
+      run: pip install pytest
+
     - name: run unit test
       run: pytest test_sample.py
   
